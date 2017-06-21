@@ -1,0 +1,552 @@
+<div>
+	<div class="layout-box" style="margin-top:60px">
+		<div class="usa-grid" style="padding:0px">
+			<div class="usa-width-one-third">
+				<div ng-include="'pages/steps.html'"></div>
+			</div>
+			<div class="usa-width-two-thirds">
+				<div class="page-title" style="margin-top:40px">
+					Section 2: School Information
+				</div>
+				<div class="grey-line"></div>
+				<p class="info">
+					Next, please tell us about the school and program you attended.
+				</p>
+				<label for="input-type-text">School*</label>
+				<input id="input-type-text" name="input-type-text" type="text" value="{{schoolInformation.NAME}}">
+				<form class="usa-form" style='display:none'>
+					<label for="options">Campus</label>
+					<select name="options" id="options">
+						<option value="value1">NY</option>
+						<option value="value2">VA</option>
+						<option value="value3">MD</option>
+					</select>
+				</form>
+				
+				<div class="usa-grid" style="padding:0px">
+					<div class="usa-width-one-third" style="    margin-top: 48px;">
+						<label for="input-type-text">City*</label>
+						<input id="input-type-text" name="input-type-text" type="text" value="{{schoolInformation.CITY}}">
+					</div>
+					
+					<div class="usa-width-two-thirds">
+						<form class="usa-form">
+							<label for="options">State*</label>
+							<select ng-model="myselect.m" ng-init="test = states[0]" ng-options="month as month for month in states">
+								<option value="">{{schoolInformation.ST}}</option>
+							</select>
+						</form>
+					</div>
+				</div>
+
+				<label for="input-type-text">Current Status at School*</label>
+				<fieldset class="usa-fieldset-inputs usa-sans" style="margin-top:20px;">
+					<legend class="usa-sr-only">Current Status at school</legend>
+					<ul class="h-radio-buttons">
+						<li>
+							<input id="stanton" type="radio" name="historical-figures-2" value="stanton">
+							<label for="stanton">Graduated</label>
+						</li>
+						<li>
+							<input id="anthony" type="radio" name="historical-figures-2" value="anthony">
+							<label for="anthony">Transferred</label>
+						</li>
+						<li>
+							<input id="tubman" type="radio" name="historical-figures-2" value="tubman">
+							<label for="tubman">Withdrew</label>
+						</li>
+						<li>
+							<input id="tubman" type="radio" name="historical-figures-2" value="tubman">
+							<label for="tubman">Attending</label>
+						</li>
+					</ul>
+				</fieldset>
+
+
+
+				<div class="grey-line" style="margin-top:20px;"></div>
+				
+				<label for="input-type-text">Program Name or Major*</label>
+
+					<select name="program_choices" id="program_choices" ng-model="program_choices" data-validation-engine="validate[required]" data-prompt-position="topRight:-150">
+						<option selected="selected" value="">Select a Program Name</option>
+						<option value="Administration">Administration</option>
+						<option value="Administrative Assistant">Administrative Assistant</option>
+						<option value="Administrative Medical Assistant">Administrative Medical Assistant</option>
+						<option value="Administrative Office Technology">Administrative Office Technology</option>
+						<option value="Applied Automotive Technology">Applied Automotive Technology</option>
+						<option value="Applied Management">Applied Management</option>
+						<option value="Automotive Technology">Automotive Technology</option>
+						<option value="Automotive Technology and Management">Automotive Technology and Management</option>
+						<option value="Biomedical Engineering Technology">Biomedical Engineering Technology</option>
+						<option value="Business">Business</option>
+						<option value="Business Accounting">Business Accounting</option>
+						<option value="Business Administration">Business Administration</option>
+						<option value="Business Management">Business Management</option>
+						<option value="Business Operations">Business Operations</option>
+						<option value="Career Access Program">Career Access Program</option>
+						<option value="Carpentry">Carpentry</option>
+						<option value="Collision Technology">Collision Technology</option>
+						<option value="Computer and Electronics Engineering Technology">Computer and Electronics Engineering Technology</option>
+						<option value="Computer Drafting and Design">Computer Drafting and Design</option>
+						<option value="Computer Engineering Technology">Computer Engineering Technology</option>
+						<option value="Computer Forensics">Computer Forensics</option>
+						<option value="Computer Information Systems">Computer Information Systems</option>
+						<option value="Computer Office Technology">Computer Office Technology</option>
+						<option value="Computer Science">Computer Science</option>
+						<option value="Computer Technology">Computer Technology</option>
+						<option value="Construction Management">Construction Management</option>
+						<option value="Construction Technology">Construction Technology</option>
+						<option value="Criminal Investigations">Criminal Investigations</option>
+						<option value="Criminal Justice">Criminal Justice</option>
+						<option value="Criminology and Forensic Technology">Criminology and Forensic Technology</option>
+						<option value="Dental Assistant">Dental Assistant</option>
+						<option value="Diagnostic Cardiac Sonogram">Diagnostic Cardiac Sonogram</option>
+						<option value="Diesel Technology">Diesel Technology</option>
+						<option value="Digital Entertainment and Game Design">Digital Entertainment and Game Design</option>
+						<option value="Digital Marketing">Digital Marketing</option>
+						<option value="Drafting and Design Technology">Drafting and Design Technology</option>
+						<option value="Electrical Engineering Technology">Electrical Engineering Technology</option>
+						<option value="Electrical Technician">Electrical Technician</option>
+						<option value="Electrician">Electrician</option>
+						<option value="Electronics Computer Technology">Electronics Computer Technology</option>
+						<option value="Electronics Engineering Technology">Electronics Engineering Technology</option>
+						<option value="Electronics Technology">Electronics Technology</option>
+						<option value="Entrepreneurship">Entrepreneurship</option>
+						<option value="Executive Assistant">Executive Assistant</option>
+						<option value="Film and Video">Film and Video</option>
+						<option value="Finance">Finance</option>
+						<option value="Graphic Communications and Design">Graphic Communications and Design</option>
+						<option value="Health Care Administration">Health Care Administration</option>
+						<option value="Health Care Management">Health Care Management</option>
+						<option value="Health Information Technology">Health Information Technology</option>
+						<option value="Heating Ventilation and Air Conditioning">Heating Ventilation and Air Conditioning</option>
+						<option value="Homeland Security">Homeland Security</option>
+						<option value="Hospitality Management">Hospitality Management</option>
+						<option value="Human Resources">Human Resources</option>
+						<option value="Industrial Electrical Technology">Industrial Electrical Technology</option>
+						<option value="Industrial Engineering Technology">Industrial Engineering Technology</option>
+						<option value="Information Systems Administration">Information Systems Administration</option>
+						<option value="Information Systems Security">Information Systems Security</option>
+						<option value="Information Technology (IT) ">Information Technology (IT) </option>
+						<option value="Legal Assistant">Legal Assistant</option>
+						<option value="Legal Assistant/Paralegal">Legal Assistant/Paralegal</option>
+						<option value="Management">Management</option>
+						<option value="Marketing">Marketing</option>
+						<option value="Massage Therapy">Massage Therapy</option>
+						<option value="Medical Administrative Assistant">Medical Administrative Assistant</option>
+						<option value="Medical Assistant">Medical Assistant</option>
+						<option value="Medical Insurance Billing & Coding">Medical Insurance Billing & Coding</option>
+						<option value="Medical Office Administration">Medical Office Administration</option>
+						<option value="Mobile Communications Technology">Mobile Communications Technology</option>
+						<option value="Motorcycle Technician">Motorcycle Technician</option>
+						<option value="Motorsports Chassis Fabrication">Motorsports Chassis Fabrication</option>
+						<option value="Network & Communications Management">Network & Communications Management</option>
+						<option value="Network and Internet Security Specialist">Network and Internet Security Specialist</option>
+						<option value="Network Systems Administration">Network Systems Administration</option>
+						<option value="Network Tech ">Network Tech </option>
+						<option value="Nursing">Nursing</option>
+						<option value="Office Skills">Office Skills</option>
+						<option value="Paralegal">Paralegal</option>
+						<option value="Patient Care Technician">Patient Care Technician</option>
+						<option value="Pharmacy Technician">Pharmacy Technician</option>
+						<option value="Pharmacy Technology">Pharmacy Technology</option>
+						<option value="Plumbing Technology">Plumbing Technology</option>
+						<option value="Practical Nursing">Practical Nursing</option>
+						<option value="Project Management">Project Management</option>
+						<option value="Radiologic Technician">Radiologic Technician</option>
+						<option value="Radiologic Technology">Radiologic Technology</option>
+						<option value="Respiratory Care">Respiratory Care</option>
+						<option value="Sales">Sales</option>
+						<option value="Small Business Management">Small Business Management</option>
+						<option value="Software Development">Software Development</option>
+						<option value="Street Rod and Custom Fabrication">Street Rod and Custom Fabrication</option>
+						<option value="Surgical Technologist">Surgical Technologist</option>
+						<option value="Technical Management">Technical Management</option>
+						<option value="Veterinary Technology">Veterinary Technology</option>
+						<option value="Visual Communications">Visual Communications</option>
+						<option value="Web Design">Web Design</option>
+						<option value="Other">Other…</option>
+
+					</select>
+
+					<div ng-show="program_choices=='Other'" style="margin-bottom: 12px;">
+						<input id="input-type-text" name="input-type-text" type="text" placeholder ="Enter Program Name*" value="">
+					</div>
+
+		<md-autocomplete
+			ng-disabled="ctrl.isDisabled"
+			md-no-cache="ctrl.noCache"
+			md-selected-item="ctrl.selectedItem"
+			md-search-text-change="ctrl.searchTextChange(ctrl.searchText)"
+			md-search-text="ctrl.searchText"
+			md-selected-item-change="ctrl.selectedItemChange(item)"
+			md-items="item in ctrl.querySearch(ctrl.searchText)"
+			md-item-text="item.display"
+			md-min-length="3"
+			placeholder="Type the program name" style="width:50%">
+		<md-item-template>
+		<span md-highlight-text="ctrl.searchText" md-highlight-flags="^i">{{item.display}}</span>
+		</md-item-template>
+		<md-not-found>
+		No colleges matching "{{ctrl.searchText}}" were found. Please type out the name above.
+		</md-not-found>
+		</md-autocomplete>
+
+
+
+				<div >
+					<label for="input-type-text">Credential/Degree Sought*</label>
+					<select name="credential" id="credential" data-prompt-position="topRight:-150" >
+						<option selected="selected" value="">Select Diploma Type</option
+						<option value="value1">Diploma</option>
+						<option value="value2">Certificate</option>
+						<option value="value3">Associates-AS</option>
+						<option value="value3">Associates-AAS</option>
+						<option value="value3">Bachelors</option>
+						<option value="value3">Masters</option>
+						<option value="value3">Other</option>
+					</select>
+				</div>
+
+				<label for="input-type-text">Dates of Enrollment* </label>
+				<div class="usa-grid" style="padding:0px">
+					
+					<div class="usa-width-one-third" style="width:40px" >
+						<b><br>From: </b>
+					</div>
+
+					<div class="usa-width-one-fourth">
+						<input class="usa-input-inline" aria-describedby="dobHint" class="usa-form-control" id="start_date1" name="start_date1" type="text" placeholder="mm/yyyy" style="display:inline-block;width:90%">
+					</div>
+					
+					<div class="usa-width-one-fourth" style="width:20px">
+						<b><br>To:</b>
+					</div>
+					
+
+					<div class="usa-width-one-fourth">
+						<input class="usa-input-inline" aria-describedby="dobHint" class="usa-form-control" id="start_date2" name="start_date2" type="text" placeholder="mm/yyyy" style="display:inline-block;width:90%">
+					</div>
+					
+					<div class="usa-width-one-third">
+						<input id="truth" type="checkbox" name="historical-figures-1" value="truth" >
+						<label for="truth" class="reset" style="margin-top:20px;">Still Enrolled?</label>						
+					</div>
+				</div>
+
+				<div ng-show="add_date>0" style="margin-top:20px;">
+					<label for="input-type-text" style="display:none">Any previous enrollment?</label>
+					<div class="usa-grid" style="padding:0px">
+						
+					<div class="usa-width-one-third" style="width:40px">
+						<b><br>From: </b>
+					</div>
+
+					<div class="usa-width-one-fourth">
+						<input class="usa-input-inline" aria-describedby="dobHint" class="usa-form-control" id="start_date1" name="start_date1" type="text" placeholder="mm/yyyy" style="display:inline-block;width:90%">
+					</div>
+					
+					<div class="usa-width-one-fourth" style="width:20px">
+						<b><br>To:</b>
+					</div>
+					
+
+					<div class="usa-width-one-fourth">
+						<input class="usa-input-inline" aria-describedby="dobHint" class="usa-form-control" id="start_date2" name="start_date2" type="text" placeholder="mm/yyyy" style="display:inline-block;width:90%">
+					</div>
+
+
+					<div class="usa-width-one-third">
+						<a href="javascript:" style="cursor: pointer" ng-click="add_date=add_date-1"><br>Remove dates</a>					
+					</div>
+
+					</div>
+				</div>
+
+				<div ng-show="add_date>1" style="margin-top:20px;">
+					<label for="input-type-text" style="display:none">Any previous enrollment?</label>
+					<div class="usa-grid" style="padding:0px">
+						
+					<div class="usa-width-one-third" style="width:40px">
+						<b><br>From: </b>
+					</div>
+
+					<div class="usa-width-one-fourth">
+						<input class="usa-input-inline" aria-describedby="dobHint" class="usa-form-control" id="start_date1" name="start_date1" type="text" placeholder="mm/yyyy" style="display:inline-block;width:90%">
+					</div>
+					
+					<div class="usa-width-one-fourth" style="width:20px">
+						<b><br>To:</b>
+					</div>
+					
+
+					<div class="usa-width-one-fourth">
+						<input class="usa-input-inline" aria-describedby="dobHint" class="usa-form-control" id="start_date2" name="start_date2" type="text" placeholder="mm/yyyy" style="display:inline-block;width:90%">
+					</div>
+
+
+					<div class="usa-width-one-third">
+						<a href="javascript:" style="cursor: pointer" ng-click="add_date=add_date-1"><br>Remove dates</a>					
+					</div>
+
+					</div>
+				</div>
+
+				<p>
+					If your attendance at the school [PROGRAM?] listed above was not or has not been continuous (for example, from October 2015 to March 2016, then again from August 2016 to November 2016), please enter all dates that you attended. </br> <a href="javascript:" style="cursor: pointer" ng-click="add_date=add_date+1">Add another date range</a>
+				</p>
+
+		<div ng-show="add_program>0">	
+
+				<div class="grey-line" style="margin-top:20px;"></div>
+				
+				<label for="input-type-text">Second Program Name or Major*</label>  <a href="javascript:" style="cursor: pointer" ng-click="add_program=add_program-1">Remove program</a>
+
+
+				<select name="program_choices2" id="program_choices2" ng-model="program_choices2" data-validation-engine="validate[required]" data-prompt-position="topRight:-150">
+						<option selected="selected" value="">Select a Program Name</option>
+				
+<option value="Administration">Administration</option>
+<option value="Administrative Assistant">Administrative Assistant</option>
+<option value="Administrative Medical Assistant">Administrative Medical Assistant</option>
+<option value="Administrative Office Technology">Administrative Office Technology</option>
+<option value="Applied Automotive Technology">Applied Automotive Technology</option>
+<option value="Applied Management">Applied Management</option>
+<option value="Automotive Technology">Automotive Technology</option>
+<option value="Automotive Technology and Management">Automotive Technology and Management</option>
+<option value="Biomedical Engineering Technology">Biomedical Engineering Technology</option>
+<option value="Business">Business</option>
+<option value="Business Accounting">Business Accounting</option>
+<option value="Business Administration">Business Administration</option>
+<option value="Business Management">Business Management</option>
+<option value="Business Operations">Business Operations</option>
+<option value="Career Access Program">Career Access Program</option>
+<option value="Carpentry">Carpentry</option>
+<option value="Collision Technology">Collision Technology</option>
+<option value="Computer and Electronics Engineering Technology">Computer and Electronics Engineering Technology</option>
+<option value="Computer Drafting and Design">Computer Drafting and Design</option>
+<option value="Computer Engineering Technology">Computer Engineering Technology</option>
+<option value="Computer Forensics">Computer Forensics</option>
+<option value="Computer Information Systems">Computer Information Systems</option>
+<option value="Computer Office Technology">Computer Office Technology</option>
+<option value="Computer Science">Computer Science</option>
+<option value="Computer Technology">Computer Technology</option>
+<option value="Construction Management">Construction Management</option>
+<option value="Construction Technology">Construction Technology</option>
+<option value="Criminal Investigations">Criminal Investigations</option>
+<option value="Criminal Justice">Criminal Justice</option>
+<option value="Criminology and Forensic Technology">Criminology and Forensic Technology</option>
+<option value="Dental Assistant">Dental Assistant</option>
+<option value="Diagnostic Cardiac Sonogram">Diagnostic Cardiac Sonogram</option>
+<option value="Diesel Technology">Diesel Technology</option>
+<option value="Digital Entertainment and Game Design">Digital Entertainment and Game Design</option>
+<option value="Digital Marketing">Digital Marketing</option>
+<option value="Drafting and Design Technology">Drafting and Design Technology</option>
+<option value="Electrical Engineering Technology">Electrical Engineering Technology</option>
+<option value="Electrical Technician">Electrical Technician</option>
+<option value="Electrician">Electrician</option>
+<option value="Electronics Computer Technology">Electronics Computer Technology</option>
+<option value="Electronics Engineering Technology">Electronics Engineering Technology</option>
+<option value="Electronics Technology">Electronics Technology</option>
+<option value="Entrepreneurship">Entrepreneurship</option>
+<option value="Executive Assistant">Executive Assistant</option>
+<option value="Film and Video">Film and Video</option>
+<option value="Finance">Finance</option>
+<option value="Graphic Communications and Design">Graphic Communications and Design</option>
+<option value="Health Care Administration">Health Care Administration</option>
+<option value="Health Care Management">Health Care Management</option>
+<option value="Health Information Technology">Health Information Technology</option>
+<option value="Heating Ventilation and Air Conditioning">Heating Ventilation and Air Conditioning</option>
+<option value="Homeland Security">Homeland Security</option>
+<option value="Hospitality Management">Hospitality Management</option>
+<option value="Human Resources">Human Resources</option>
+<option value="Industrial Electrical Technology">Industrial Electrical Technology</option>
+<option value="Industrial Engineering Technology">Industrial Engineering Technology</option>
+<option value="Information Systems Administration">Information Systems Administration</option>
+<option value="Information Systems Security">Information Systems Security</option>
+<option value="Information Technology (IT) ">Information Technology (IT) </option>
+<option value="Legal Assistant">Legal Assistant</option>
+<option value="Legal Assistant/Paralegal">Legal Assistant/Paralegal</option>
+<option value="Management">Management</option>
+<option value="Marketing">Marketing</option>
+<option value="Massage Therapy">Massage Therapy</option>
+<option value="Medical Administrative Assistant">Medical Administrative Assistant</option>
+<option value="Medical Assistant">Medical Assistant</option>
+<option value="Medical Insurance Billing & Coding">Medical Insurance Billing & Coding</option>
+<option value="Medical Office Administration">Medical Office Administration</option>
+<option value="Mobile Communications Technology">Mobile Communications Technology</option>
+<option value="Motorcycle Technician">Motorcycle Technician</option>
+<option value="Motorsports Chassis Fabrication">Motorsports Chassis Fabrication</option>
+<option value="Network & Communications Management">Network & Communications Management</option>
+<option value="Network and Internet Security Specialist">Network and Internet Security Specialist</option>
+<option value="Network Systems Administration">Network Systems Administration</option>
+<option value="Network Tech ">Network Tech </option>
+<option value="Nursing">Nursing</option>
+<option value="Office Skills">Office Skills</option>
+<option value="Paralegal">Paralegal</option>
+<option value="Patient Care Technician">Patient Care Technician</option>
+<option value="Pharmacy Technician">Pharmacy Technician</option>
+<option value="Pharmacy Technology">Pharmacy Technology</option>
+<option value="Plumbing Technology">Plumbing Technology</option>
+<option value="Practical Nursing">Practical Nursing</option>
+<option value="Project Management">Project Management</option>
+<option value="Radiologic Technician">Radiologic Technician</option>
+<option value="Radiologic Technology">Radiologic Technology</option>
+<option value="Respiratory Care">Respiratory Care</option>
+<option value="Sales">Sales</option>
+<option value="Small Business Management">Small Business Management</option>
+<option value="Software Development">Software Development</option>
+<option value="Street Rod and Custom Fabrication">Street Rod and Custom Fabrication</option>
+<option value="Surgical Technologist">Surgical Technologist</option>
+<option value="Technical Management">Technical Management</option>
+<option value="Veterinary Technology">Veterinary Technology</option>
+<option value="Visual Communications">Visual Communications</option>
+<option value="Web Design">Web Design</option>
+<option value="Other">Other…</option>
+
+					</select>
+
+					<div ng-show="program_choices2=='Other'" style="margin-bottom: 12px;">
+						<input id="input-type-text" name="input-type-text" type="text" placeholder ="Enter Program Name*" value="">
+					</div>
+
+
+				<div>
+					<label for="input-type-text">Credential/Degree Sought*</label>
+					<select name="options" id="options">
+						<option value="value1">Diploma</option>
+						<option value="value2">Certificate</option>
+						<option value="value3">Associates-AS</option>
+						<option value="value3">Associates-AAS</option>
+						<option value="value3">Bachelors</option>
+						<option value="value3">Masters</option>
+						<option value="value3">Other</option>
+					</select>
+				</div>
+
+				<label for="input-type-text">Dates of Enrollment* </label>
+				<div class="usa-grid" style="padding:0px">
+					
+					<div class="usa-width-one-third" style="width:40px" >
+						<b><br>From: </b>
+					</div>
+
+					<div class="usa-width-one-fourth">
+						<input class="usa-input-inline" aria-describedby="dobHint" class="usa-form-control" id="start_date1" name="start_date1" type="text" placeholder="mm/yyyy" style="display:inline-block;width:90%">
+					</div>
+					
+					<div class="usa-width-one-fourth" style="width:20px">
+						<b><br>To:</b>
+					</div>
+					
+
+					<div class="usa-width-one-fourth">
+						<input class="usa-input-inline" aria-describedby="dobHint" class="usa-form-control" id="start_date2" name="start_date2" type="text" placeholder="mm/yyyy" style="display:inline-block;width:90%">
+					</div>
+					
+					<div class="usa-width-one-third">
+						<input id="truth" type="checkbox" name="historical-figures-1" value="truth" >
+						<label for="truth" class="reset" style="margin-top:20px;">Still Enrolled?</label>						
+					</div>
+				</div>
+
+				<div ng-show="add_date2>0" style="margin-top:20px;">
+					<label for="input-type-text" style="display:none">Any previous enrollment?</label>
+					<div class="usa-grid" style="padding:0px">
+						
+					<div class="usa-width-one-third" style="width:40px">
+						<b><br>From: </b>
+					</div>
+
+					<div class="usa-width-one-fourth">
+						<input class="usa-input-inline" aria-describedby="dobHint" class="usa-form-control" id="start_date1" name="start_date1" type="text" placeholder="mm/yyyy" style="display:inline-block;width:90%">
+					</div>
+					
+					<div class="usa-width-one-fourth" style="width:20px">
+						<b><br>To:</b>
+					</div>
+					
+
+					<div class="usa-width-one-fourth">
+						<input class="usa-input-inline" aria-describedby="dobHint" class="usa-form-control" id="start_date2" name="start_date2" type="text" placeholder="mm/yyyy" style="display:inline-block;width:90%">
+					</div>
+
+
+					<div class="usa-width-one-third">
+						<a href="javascript:" style="cursor: pointer" ng-click="add_date2=add_date2-1"><br>Remove dates</a>					
+					</div>
+
+					</div>
+				</div>
+
+				<div ng-show="add_date2>1" style="margin-top:20px;">
+					<label for="input-type-text" style="display:none">Any previous enrollment?</label>
+					<div class="usa-grid" style="padding:0px">
+						
+					<div class="usa-width-one-third" style="width:40px">
+						<b><br>From: </b>
+					</div>
+
+					<div class="usa-width-one-fourth">
+						<input class="usa-input-inline" aria-describedby="dobHint" class="usa-form-control" id="start_date1" name="start_date1" type="text" placeholder="mm/yyyy" style="display:inline-block;width:90%">
+					</div>
+					
+					<div class="usa-width-one-fourth" style="width:20px">
+						<b><br>To:</b>
+					</div>
+					
+
+					<div class="usa-width-one-fourth">
+						<input class="usa-input-inline" aria-describedby="dobHint" class="usa-form-control" id="start_date2" name="start_date2" type="text" placeholder="mm/yyyy" style="display:inline-block;width:90%">
+					</div>
+
+
+					<div class="usa-width-one-third">
+						<a href="javascript:" style="cursor: pointer" ng-click="add_date2=add_date2-1"><br>Remove dates</a>					
+					</div>
+
+					</div>
+				</div>
+
+					<p>
+					If your attendance at the school [PROGRAM?] listed above was not or has not been continuous (for example, from October 2015 to March 2016, then again from August 2016 to November 2016), please enter all dates that you attended. </br> <a href="javascript:" style="cursor: pointer" ng-click="add_date2=add_date2+1">Add another date range</a>
+				</p>
+
+			</div>
+
+				
+				<div class="grey-line"></div>
+
+
+
+
+
+
+
+
+
+				<p>
+					<br>If you enrolled in multiple programs at the school listed above, please enter all programs that you were enrolled in. <br>
+					<a href="javascript:" style="cursor: pointer" ng-click="add_program=add_program+1">Add another program</a>
+				</p>
+				
+				<div class="layout-box" style="margin-top:20px;">
+					<div class="usa-grid reset" style="padding:0px;max-width:200px">
+						<div class="usa-width-one-half">
+							<a href="javascript:window.history.back()" class="previous">Previous</a>
+						</div>
+						<div class="usa-width-one-half">
+							<a href="#!/supported-documents" >
+								<button class="usa-button-gray">Continue</button>
+							</a>
+						</div>
+					</div>
+				</div>
+				<p>
+					* Required information 
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

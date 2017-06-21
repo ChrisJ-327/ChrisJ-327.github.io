@@ -1,0 +1,80 @@
+<div >
+	<div class="layout-box" style="margin-top:60px">
+		<div class="usa-grid" style="padding:0px">
+			<div class="usa-width-one-third">
+				<div ng-include="'pages/steps.html'"></div>
+			</div>
+			<div class="usa-width-two-thirds">
+				<div class="page-title" style="margin-top:40px">
+					Section 4: Other Loan Reduction or Tuition Recovery Requests
+				</div>
+				<div class="grey-line"></div>
+				<p class="info">
+					Have you made any other requests to have your Federal loans forgiven (for example, under a closed school discharge or false certification discharge from the U.S. Department of Education)? 
+				</p>
+				
+				<ul class="h-radio-buttons">
+					<li>
+						<input id="question1a" type="radio"  ng-model="question1" name="question1" value="yes" >
+						<label for="question1a">Yes</label>
+					</li>
+					<li >
+						<input id="question1b" type="radio" ng-model="question1" name="question1" value="no" >
+						<label for="question1b" >No</label>
+					</li>
+				</ul>
+				
+				<div class="arrow_box" ng-show="question1 == 'yes'">
+					
+					<label for="input-type-textarea" class="reset">Please describe these other request(s), including the amount of any loan forgiveness that you received, and attach any documentation about the requests, if available:</label>
+					<textarea id="input-type-textarea" name="input-type-textarea"></textarea>
+				</div>
+				
+
+				<p class="info">
+					Have you made any requests to anyone else to recover tuition amounts that you paid to your school (for example, a lawsuit against the school or a claim made to a tuition recovery program)? 
+				</p>
+				
+				<ul class="h-radio-buttons">
+					<li>
+						<input id="stanton2" type="radio"  ng-model="question2" name="question2" value="yes" >
+						<label for="stanton2">Yes</label>
+					</li>
+					<li >
+						<input id="anthony2" type="radio" ng-model="question2" name="question2" value="no" >
+						<label for="anthony2" >No</label>
+					</li>
+				</ul>
+				
+				<div class="arrow_box" ng-show="question2 == 'yes'">
+					
+					<label for="input-type-textarea" class="reset">Please describe these other request(s), including the amount of the payment that you received (if any), and attach any documentation about the requests, if available:</label>
+					<textarea id="input-type-textarea" name="input-type-textarea"></textarea>
+				</div>
+
+
+
+	<div class="layout-box" style="margin-top:20px;">
+					<div class="usa-grid reset" style="padding:0px;max-width:200px">
+						<div class="usa-width-one-half">
+							<a href="javascript:window.history.back()" class="previous">Previous</a>
+						</div>
+						<div class="usa-width-one-half">
+							<a href="#!/basis-for-borrower-defense">
+								<button class="usa-button-gray">Continue</button>
+							</a>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+				<p>
+					* Required information
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

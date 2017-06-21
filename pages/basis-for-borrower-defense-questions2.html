@@ -1,0 +1,24 @@
+
+<label for="input-type-textarea" class="reset">Please provide detailed information about how the school misled you. Please also describe any financial harm to you as a result of the school’s conduct. *</label>
+<textarea id="input-type-textarea" name="input-type-textarea"></textarea>
+
+ 
+<div class="usa-grid reset" style="padding:0px;margin-top:20px;">
+
+   <div class="usa-width-two-thirds" >
+   	Did this affect your decision to enroll in this school? *
+   </div>
+   <div class="usa-width-one-third">
+   	<ul class="h-radio-buttons">
+   	<li>
+   	   <input id="{{pass.text}}" type="radio" ng-model="{{pass.text}}" name="{{pass.text}}" value="yes">
+   	   <label for="{{pass.text}}">Yes</label>
+   	</li>
+   	<li>
+   	   <input id="{{pass.text}}" type="radio" ng-model="{{pass.text}}" name="{{pass.text}}" value="no">
+   	   <label for="{{pass.text}}">No</label>
+   	</li>
+   	
+   	</ul>
+   </div>
+</div>
