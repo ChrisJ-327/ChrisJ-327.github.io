@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/thedangerspoon
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://chrisj.com
+  * I am thedangerspoon (https://keybase.io/thedangerspoon) on keybase.
+  * I have a public key ASC5zo6y_WgV1CxEAb0bKXrwfdN9zIuhoQehbU34a8gEEAo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01018cfa4919577891734f8297a9defa60c9e7aa79cdca8b90a54e0e6c47fb950f1d0a",
+            "host": "keybase.io",
+            "kid": "0120b9ce8eb2fd6815d42c4401bd1b297af07dd37dcc8ba1a107a16d4df86bc804100a",
+            "uid": "57cf803d4528828c610f1c20185a8e19",
+            "username": "thedangerspoon"
+        },
+        "merkle_root": {
+            "ctime": 1498188672,
+            "hash": "d53cb7c74c77ae3f46377177ce5f41d34920dc9b818a9ab1dfef3fdf18795ff33e9ae195dbe1f2bbb9e04069ad9aeee241a5b455c7239788573ece62c1037925",
+            "hash_meta": "dbec370963936fb3b36a2b2d2dd915a6fd16d25a6974ed9c419a8eecaaf6d81f",
+            "seqno": 1188672
+        },
+        "service": {
+            "hostname": "chrisj.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.24"
+    },
+    "ctime": 1498188716,
+    "expire_in": 504576000,
+    "prev": "80931e20a2a59d30d0141a06673d38088d290fc56af20f2f0b6059dce7685160",
+    "seqno": 13,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEguc6Osv1oFdQsRAG9Gyl68H3TfcyLoaEHoW1N+GvIBBAKp3BheWxvYWTFA0h7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxOGNmYTQ5MTk1Nzc4OTE3MzRmODI5N2E5ZGVmYTYwYzllN2FhNzljZGNhOGI5MGE1NGUwZTZjNDdmYjk1MGYxZDBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwYjljZThlYjJmZDY4MTVkNDJjNDQwMWJkMWIyOTdhZjA3ZGQzN2RjYzhiYTFhMTA3YTE2ZDRkZjg2YmM4MDQxMDBhIiwidWlkIjoiNTdjZjgwM2Q0NTI4ODI4YzYxMGYxYzIwMTg1YThlMTkiLCJ1c2VybmFtZSI6InRoZWRhbmdlcnNwb29uIn0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDk4MTg4NjcyLCJoYXNoIjoiZDUzY2I3Yzc0Yzc3YWUzZjQ2Mzc3MTc3Y2U1ZjQxZDM0OTIwZGM5YjgxOGE5YWIxZGZlZjNmZGYxODc5NWZmMzNlOWFlMTk1ZGJlMWYyYmJiOWUwNDA2OWFkOWFlZWUyNDFhNWI0NTVjNzIzOTc4ODU3M2VjZTYyYzEwMzc5MjUiLCJoYXNoX21ldGEiOiJkYmVjMzcwOTYzOTM2ZmIzYjM2YTJiMmQyZGQ5MTVhNmZkMTZkMjVhNjk3NGVkOWM0MTlhOGVlY2FhZjZkODFmIiwic2Vxbm8iOjExODg2NzJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiY2hyaXNqLmNvbSIsInByb3RvY29sIjoiaHR0cDoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMjQifSwiY3RpbWUiOjE0OTgxODg3MTYsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJwcmV2IjoiODA5MzFlMjBhMmE1OWQzMGQwMTQxYTA2NjczZDM4MDg4ZDI5MGZjNTZhZjIwZjJmMGI2MDU5ZGNlNzY4NTE2MCIsInNlcW5vIjoxMywidGFnIjoic2lnbmF0dXJlIn2jc2lnxEAPHjkmmmYimnUDktaBFhu6yXEtYGgso991zSkHHWu8dNkX2SOCdbKzvct6jWzHWZhVyaz2JfRyZX67j5gNeGABqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgDdsOFD5Lmvd7jj6XuFpPxIE8qrZ5TKI1laibxkbtTPmjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/thedangerspoon
+
+==================================================================
